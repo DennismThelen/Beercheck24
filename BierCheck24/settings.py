@@ -122,7 +122,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Verzeichnis, in welchem die statischen Dateien gesammelt werden
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+#STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # Verzeichnis, in dem die gesammelten statischen Dateien(für die Produktionsumgebung) abgelegt werden
 STATIC_ROOT = '/home/dennismthelen/Beercheck24/static/'
