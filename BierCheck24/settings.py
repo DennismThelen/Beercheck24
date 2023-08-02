@@ -125,11 +125,17 @@ STATIC_URL = '/static/'
 #STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # Verzeichnis, in dem die gesammelten statischen Dateien(für die Produktionsumgebung) abgelegt werden
-STATIC_ROOT = '/home/dennismthelen/Beercheck24/static/'
 
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+#STATIC_ROOT = '/home/dennismthelen/Beercheck24/static/'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/home/dennismthelen/Beercheck24/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+#MEDIA_ROOT = '/home/dennismthelen/Beercheck24/media/'
+
 
 
 
